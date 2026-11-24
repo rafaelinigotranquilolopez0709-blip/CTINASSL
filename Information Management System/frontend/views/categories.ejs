@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Category Management</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <%- include('partials/sidebar') %>
+    <main class="main-content">
+      <div class="top-bar">
+        <h1>Category Management</h1>
+        <button class="btn btn-primary">+ Add Category</button>
+      </div>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Category Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Electronics</td>
+            <td>Gadgets, devices, and computing peripherals</td>
+            <td>
+              <button class="btn btn-warning">Edit</button>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Furniture</td>
+            <td>Office desks, chairs, and shelving units</td>
+            <td>
+              <button class="btn btn-warning">Edit</button>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

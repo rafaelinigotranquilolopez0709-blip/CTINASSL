@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supplier Management</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <%- include('partials/sidebar') %>
+    <main class="main-content">
+      <div class="top-bar">
+        <h1>Supplier Management</h1>
+        <button class="btn btn-primary">+ Add Supplier</button>
+      </div>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Supplier Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TechCorp Ltd.</td>
+            <td>contact@techcorp.com</td>
+            <td>+1 (555) 019-2834</td>
+            <td>123 Tech Way, Silicon Valley</td>
+            <td>
+              <button class="btn btn-warning">Edit</button>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

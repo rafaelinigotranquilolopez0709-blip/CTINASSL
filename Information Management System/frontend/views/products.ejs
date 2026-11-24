@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <%- include('partials/sidebar') %>
+    <main class="main-content">
+      <div class="top-bar">
+        <h1>Product Management</h1>
+        <a href="/products/add" class="btn btn-primary">+ Add New Product</a>
+      </div>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Supplier</th>
+            <th>Stock Quantity</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Laptop Pro</td>
+            <td>Electronics</td>
+            <td>TechCorp</td>
+            <td>45</td>
+            <td>$1,299.00</td>
+            <td>
+              <button class="btn btn-warning">Edit</button>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Desk Chair</td>
+            <td>Furniture</td>
+            <td>OfficePro</td>
+            <td>30</td>
+            <td>$199.99</td>
+            <td>
+              <button class="btn btn-warning">Edit</button>
+              <button class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Inventory Management System</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body { display: flex; align-items: center; justify-content: center; height: 100vh; background: #0f172a; }
+    .login-box { background: #fff; padding: 40px; border-radius: 8px; width: 360px; text-align: center; }
+    .login-box h2 { margin-bottom: 20px; color: #1e293b; }
+    .login-box input { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>GearUp: Ready For The Road</h2>
+    <p style="color: #64748b; margin-bottom: 20px;">Inventory Management System</p>
+    <form action="/dashboard" method="GET">
+      <div class="form-group">
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+    </form>
+  </div>
+</body>
+</html>
